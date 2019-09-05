@@ -10,7 +10,7 @@ class IntRoman:
         >>> ir = IntRoman()
     2. use the to_roman method to convert
         >>> ir.to_roman(4)
-        iv
+        'IV'
     3. use the to_roman_list method to convert a list of integers
         >>> ir.to_roman_list([4, 63, 963, 623])
         ['IV', 'LXIII',  'CMLXIII', 'DCXXIII']
