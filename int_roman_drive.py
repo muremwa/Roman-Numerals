@@ -16,5 +16,5 @@ end = time()
 
 print('time used is {}'.format(end-start))
 
-# with open('roman_time.txt', 'a') as f:
-#     print('time used is {}'.format(end-start), file=f)
+with open('roman_time.txt', 'a') as f:
+    print('time used is {}'.format(end-start), file=f)
