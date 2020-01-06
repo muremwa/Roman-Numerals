@@ -1,4 +1,4 @@
-# write all numbers upto 3999 to thier roman equivalent
+# write all numbers up to 3999 to their roman equivalent
 from int_roman import IntRoman
 
 

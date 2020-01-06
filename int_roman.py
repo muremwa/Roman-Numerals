@@ -105,3 +105,9 @@ class IntRoman:
         """
         list_int = [self.to_roman(num) for num in list_int]
         return list_int
+
+    def __str__(self):
+        return "IntRoman Converter"
+
+    def __repr__(self):
+        return self.__str__()
