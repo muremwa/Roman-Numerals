@@ -103,10 +103,17 @@ class IntRoman:
         takes in a list of integers and returns a list of their respective roman numbers in the same index as the number
         the functions raises an error even if one element in the list is not an integer
         """
+        if type(list_int) not in [list, tuple, set]:
+            raise TypeError('to_roman_list only accepts lists, tuples or sets')
+
+        list_int_type = type(list_int)
+
+        if list_int_type == set:
+            print('The order of your results may differ from input. Read about sets in python')
+
         list_int = [self.to_roman(num) for num in list_int]
 
-    def __str__(self):
-        return "IntRoman Converter"
+        return list_int_type(list_int)
 
     def __repr__(self):
         return "<IntRoman Converter>"
