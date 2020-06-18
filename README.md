@@ -38,3 +38,5 @@ It does upto 3999 because I never found the character set for 5000, 10000, 50000
 	>>> dir(ir)
 ```
 __Please help add support from number 4000 to infinity (at least a million)__
+
+> `intRoman.ts` contains the implementation of the `int_roman.py` in TypeScript
