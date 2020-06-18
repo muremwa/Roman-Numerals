@@ -17,15 +17,20 @@ It does upto 3999 because I never found the character set for 5000, 10000, 50000
 ```python
 	>>> # the return value is a roman numeral equivalent string
 	>>> ir.to_roman(4)
-	'''IV'
+	# 'IV'
 ```
 
 4. Additionally, you might want to convert a whole list. Use the to_roman_list method
 ```python
-	>>> # returns a list of strings with equivalent roman numerals to the input string at the same index
+	>>> # returns an iterable of strings with equivalent roman numerals to the input string at the same index
 	>>> nums = [4, 63, 963, 623]
 	>>> ir.to_roman_list(nums)
 	# ['IV', 'LXIII', 'CMLXIII', 'DCXXIII']
+	>>> # it returns the same type it was fed
+	>>> nums = (4, 63, 963, 623)
+	>>> ir.to_roman_list(nums)
+	# ('IV', 'LXIII', 'CMLXIII', 'DCXXIII')
+	# The order of the results when a set is input may differ from the input
 ```
 
 5. For additional support or to check available methods use the dir() function

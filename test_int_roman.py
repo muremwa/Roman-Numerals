@@ -52,6 +52,8 @@ class IntRomanCase(unittest.TestCase):
         nums = [1, 22, 333, 1553, 2224]
         roms = ['I', 'XXII', 'CCCXXXIII', 'MDLIII', 'MMCCXXIV']
         self.assertListEqual(self.ir.to_roman_list(nums), roms)
+        self.assertTupleEqual(self.ir.to_roman_list(tuple(nums)), tuple(roms))
+        self.assertSetEqual(self.ir.to_roman_list(set(nums)), set(roms))
 
 
 if __name__ == '__main__':
